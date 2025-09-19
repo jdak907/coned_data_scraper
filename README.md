@@ -1,11 +1,16 @@
-# ConEd / O&R Data Utility — PySide6 + MIT
+# ConEd / O&R Data Utility
 
-A small, security-hardened toolkit that automates the conEdison portal for batch data requests:
+A Python utility for automating Con Edison / Orange & Rockland workflows and preparing data for analysis. It includes a desktop UI for driving Selenium sessions (login, MFA, portal navigation) and CLI tools for transforming and exporting datasets.
 
-- **Desktop UI (PySide6)** to drive Selenium flows for ConEd/O&R (login, MFA, portal navigation).
-- **CLI utilities** for data cleanup and batch ops (Excel→CSV, IDR file renaming).
-- **Data wrangling (Pandas)** to normalize raw utility exports into an analytics-friendly schema.
-- **Good hygiene**: PEP-8, type hints, docstrings, tests, and **no hardcoded secrets** (env-vars + `.env`).
+Desktop UI (PySide6): initiate authenticated sessions and trigger HU/IDR requests.
+
+Automation (Selenium): environment-driven, headless capable.
+
+Data processing (Pandas): normalize raw exports to a consistent schema.
+
+CLI tools: Excel→CSV conversion and safe batch renaming for IDR files.
+
+Hygiene: PEP-8 style, docstrings, small tests, secrets via environment variables.
 
 **License:** MIT (permissive).
 
